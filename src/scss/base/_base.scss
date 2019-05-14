@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains the base styles.
+// -----------------------------------------------------------------------------
+
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html { 
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  padding: 3rem;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  
+  &:disabled {
+    cursor: default;
+  }
+}
+
+a {
+  &,
+  &:hover,
+  &:visited,
+  &:focus {
+    text-decoration: none;
+  }
+}
